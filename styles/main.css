@@ -1,3 +1,7 @@
+* {
+  margin:0;
+  padding: 0;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -148,7 +152,7 @@ a > span {
 }
 
 .project-image {
-  width: 250px;
+  width: 120px;
   height: auto;
   transition: ease-in 0.3s;
 }
@@ -330,7 +334,7 @@ p {
 }
 
 .container {
-  max-width: 960px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -405,7 +409,7 @@ section {
 
 .image {
   max-height: 550px;
-  background-color: #f0f0f0;
+  background-color: #f9f9f9;
   transition: 0.25s ease;
 }
 
@@ -696,7 +700,7 @@ Animations
 
 @media (min-width: 1440px) and (max-width: 2560px) {
   .container {
-    max-width: 1180px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
   }
