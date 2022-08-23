@@ -20,16 +20,17 @@
 <script src="js/anime.min.js"></script>
 
 <body class="sand-white">
-    <nav class="home container section">
+    <nav class="home container anim1">
         <a href="/">
             <!-- <img class="logo" src="logo.svg"> -->
             <div class="sunwithface"><img src="sasi.svg" /></div>
         </a>
         <div class="nav-items">
+            <a href="/projects.html" class="about">projects</a>
             <a href="/writing.html" class="about">writing</a>
             <a href="/about.html" class="about">about</a>
-            <a href="/photos.html" class="about">photos</a>
-            <a href="/codex-2020.html" class="about">codex</a>
+            <a href="/photos.html" class="about mobile-photos">photos</a>
+            <a href="/codex-2022.html" class="about codex">codex</a>
             <!-- <a href="writing.html" class="writing">writing</a> -->
             <!-- <a href="/photos.html" class="writing">photos</a> -->
         </div>
@@ -43,7 +44,7 @@
         <a href="#relationships">Relationships</a>
         <a href="#everyday-life">Everyday life</a>
     </div>
-    <div class="container">
+    <div class="container anim1">
         <div class="pb3 section">
             <div class="mw7 lh-copy project-body">
                 <div class="pt5 bb mb3">
@@ -363,24 +364,34 @@
         <footer class="home container">
             <a href="/">
                 <!-- <img class="logo" src="logo.svg"> -->
-                <h3 class="f4 b">Alexander Traykov</h3 class="f3">
+                <h3 class="f4 b">AT</h3 class="f3">
             </a>
-            <p>Made with love and coffee in Sofia, 2020 </p>
+            <p>Made with love and coffee in Sofia, 2022 </p>
             <div class="nav-items">
-                <a href="/writing.html" class="about"><span>📸</span>Instagram</a>
-                <a href="/about.html" class="about"><span>🐦</span>Twitter</a>
-                <a href="/codex.html" class="about"><span>🏀</span>Dribbble</a>
+                <a href="https://www.instagram.com/alex.works/" class="about"><span>📸</span>Instagram</a>
+                <a href="https://twitter.com/alextraykov" class="about"><span>🐦</span>Twitter</a>
+                <a href="https://dribbble.com/alextraykov" class="about"><span>🏀</span>Dribbble</a>
                 <!-- <a href="writing.html" class="writing">writing</a> -->
                 <!-- <a href="/photos.html" class="writing">photos</a> -->
             </div>
         </footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="js/charming.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/demo.js"></script>
     <script>
-        ScrollReveal().reveal(".section", {
-            delay: 300,
-            duration: 300,
-            easing: "ease-in-out"
+        $(document).ready(function () {
+            $('.homepage-vid').show();
         });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script>
+        gsap.from('.full-width', { height: 0, opacity: 0, duration: 0.8, });
+        gsap.to('.anim1', { opacity: 1, duration: 0.5, y: 30, stagger: 0.5, delay: 0.8, ease: 'back.easeInOut' })
+        gsap.from('.content', { opacity: 0, y: -30, delay: 1.6 })
     </script>
 </body>
 

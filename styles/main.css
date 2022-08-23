@@ -767,6 +767,9 @@ Animations
 */
 
 @media (min-width: 320px) and (max-width: 767px) {
+  .main-header {
+    height: auto;
+  }
   .header-micro {
     font-size: 16px;
   }
@@ -808,7 +811,6 @@ Animations
   nav a:last-child {
     text-decoration: none;
     margin-right: 0;
-    display: none;
   }
   /* ##################### */
   footer {
@@ -849,7 +851,7 @@ Animations
   }
 
   .main-header {
-    height: 300px;
+    height: auto;
   }
 
   .project {
