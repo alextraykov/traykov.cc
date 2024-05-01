@@ -106,6 +106,8 @@ a > span {
   justify-items: center;
 }
 
+.project-description {
+}
 .subcopy {
   font-size: 20px;
 }
@@ -179,7 +181,7 @@ a > span {
 }
 
 .project-image-highlighted {
-  width: 600px;
+  width: 100px;
   height: auto;
 }
 
@@ -989,8 +991,8 @@ Animations
   top: 20%; /* Stay at the top */
   right: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
   margin-right: 30px;
+  border-radius: 16px;
 }
 
 /* The navigation menu links */
